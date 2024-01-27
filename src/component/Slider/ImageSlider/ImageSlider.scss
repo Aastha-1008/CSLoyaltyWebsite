@@ -1,0 +1,15 @@
+.slideshow {
+    overflow: hidden;
+    height: 50rem;
+}
+
+.slider-container {
+    white-space: nowrap;
+    transition: ease 1000ms;
+}
+
+
+.slide {
+    display: inline-block;
+    width: 100%;
+}

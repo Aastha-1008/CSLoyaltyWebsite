@@ -1,0 +1,38 @@
+.content_slider {
+    display: flex;
+    overflow: hidden;
+    height: 30rem;
+
+    .testimonial_content {
+        flex: 0 0 100%; 
+        opacity: 1;
+        transition: opacity 10s ease-in;
+    }
+    p{
+        line-height: 26px;
+        color: #333;
+        width: 80%;
+        margin: 0rem auto;
+    }
+
+    .slide{
+        animation: slideLeft 1s ease-in-out ;
+    }
+}
+
+@keyframes slideLeft {
+    from{transform: translateX(0%);}
+    to{transform: translateX(-100%);}
+}
+
+@keyframes scrollAnimation {
+    0%, 100% {
+        transform: translateX(0%);
+    }
+    25%, 75% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+}
